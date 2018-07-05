@@ -1,0 +1,197 @@
+@import url(conmon.css);
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    .head {
+        width: 100%;
+        height: .5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .1rem;
+        position: absolute;
+        z-index: 99;
+        >i {
+            width: .3rem;
+            height: .3rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .8);
+            line-height: .3rem;
+            text-align: center;
+        }
+        div {
+            width: 85%;
+            height: .3rem;
+            background: rgba(255, 255, 255, .5);
+            display: flex;
+            align-items: center;
+            border-radius: .3rem;
+            input {
+                border: none;
+                outline: none;
+                background: none;
+            }
+            i {
+                margin: 0 .1rem;
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    .scroll {
+        width: 100%;
+        overflow: auto;
+        .swiper-container {
+            width: 100%;
+            height: auto;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .nav {
+            border-radius: .3rem .3rem 0 0;
+            width: 100%;
+            display: flex;
+            padding: 0 .1rem;
+            flex-wrap: wrap;
+            margin: .1rem 0;
+            dl {
+                width: 19%;
+                margin: .1rem .01rem;
+                text-align: center;
+                dd {
+                    width: .5rem;
+                    height: .5rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dt {
+                    font-size: .12rem;
+                }
+            }
+        }
+        .imgs {
+            width: 100%;
+            height: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .man {
+            width: 100%;
+            height: auto;
+            background: #F7F7F7;
+            display: flex;
+            .left {
+                padding: .5rem .2rem;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    font-size: .25rem;
+                }
+                .one {
+                    margin: .1rem 0;
+                    width: .6rem;
+                    height: .3rem;
+                    background: #FF3338;
+                    border-radius: .3rem;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    h5 {
+                        font-weight: 900;
+                        font-size: .25rem;
+                        color: rgba(255, 255, 255, .8);
+                    }
+                    h6 {
+                        font-weight: 900;
+                        font-size: .25rem;
+                        color: rgba(255, 255, 255, .5);
+                    }
+                }
+            }
+            .right {
+                width: 60%;
+                height: 1.4rem;
+                background: #fff;
+                border-radius: .1rem;
+                margin: .2rem 0;
+                padding: 0 .1rem;
+                dl {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    dd {
+                        width: 65%;
+                        b {
+                            font-size: .13rem;
+                            img {
+                                width: .2rem;
+                                height: .2rem;
+                            }
+                        }
+                    }
+                    dt {
+                        width: 35%;
+                        margin: .3rem 0;
+                        margin-left: .1rem;
+                        img {
+                            width: .6rem;
+                            height: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    dl {
+        width: 20%;
+        text-align: center;
+        padding: .1rem 0;
+        dd {
+            i {
+                color: #999;
+            }
+        }
+        dt {
+            color: #999;
+        }
+    }
+}
